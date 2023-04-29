@@ -1,4 +1,4 @@
-import { UserAction, UserState, UsersActionTypes } from "../../types/user";
+import { UserAction, UserState, UserActionTypes } from "../../types/user";
 
 // states
 const initialState: UserState = {
@@ -13,11 +13,11 @@ export const userReducer = (
   action: UserAction
 ): UserState => {
   switch (action.type) {
-    case UsersActionTypes.FETCH_USERS:
+    case UserActionTypes.FETCH_USERS:
       return { users: [], loading: true, error: null };
-    case UsersActionTypes.FETCH_USERS_SUCCESS:
+    case UserActionTypes.FETCH_USERS_SUCCESS:
       return { users: action.payload, loading: false, error: null };
-    case UsersActionTypes.FETCH_USERS_ERROR:
+    case UserActionTypes.FETCH_USERS_ERROR:
       return { users: [], loading: false, error: action.payload };
     default:
       return state;
