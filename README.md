@@ -15,7 +15,6 @@ In this application, I learned how to make queries, users can get data from the 
 » React JS <br>
 » Redux <br>
 » Typescript <br>
-![Screenshot 2023-05-10 at 20 34 24]()
 
 <h2>Screenshots of the Project 📸</h2>
 <br>
